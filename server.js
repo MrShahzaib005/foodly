@@ -18,10 +18,10 @@ app.use(bodyParser.json());
 // 2. DATABASE CONNECTION
 // UPDATE THESE FIELDS with your real database info
 const db = mysql.createConnection({
-    host: 'localhost',
-    user: 'root', 
-    password: 'root',  // <--- You must type it inside the quotes
-    database: 'food_delivery_db'
+    host: '',
+    user: '', 
+    password: '',  // <--- You must type it inside the quotes
+    database: ''
 });
 
 db.connect(err => {
