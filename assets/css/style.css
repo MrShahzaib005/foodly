@@ -1,0 +1,76 @@
+:root {
+    /* Color Palette */
+    --primary-color: #ff5722;   /* The Foodies Orange */
+    --primary-hover: #e64a19;
+    --dark-bg: #212529;
+    --light-bg: #f8f9fa;
+    --text-dark: #333;
+    --text-muted: #6c757d;
+    
+    /* Spacing & Shadows */
+    --card-radius: 12px;
+    --shadow-sm: 0 2px 8px rgba(0,0,0,0.1);
+    --shadow-md: 0 5px 15px rgba(0,0,0,0.15);
+    --transition: 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--light-bg);
+    color: var(--text-dark);
+    /* Push footer to bottom */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+}
+
+/* Navbar Tweaks */
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 0.5px;
+}
+
+/* Card Styling */
+.custom-card {
+    border: none;
+    border-radius: var(--card-radius);
+    background: white;
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition), box-shadow var(--transition);
+    overflow: hidden;
+}
+
+.custom-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.custom-card img {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Buttons */
+.btn-primary-custom {
+    background-color: var(--primary-color);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.btn-primary-custom:hover {
+    background-color: var(--primary-hover);
+    color: white;
+}
+
+/* Footer (Sticks to bottom) */
+footer {
+    margin-top: auto;
+    background: var(--dark-bg);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
